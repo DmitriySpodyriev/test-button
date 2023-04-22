@@ -1,0 +1,244 @@
+body{
+  font-family: 'Bruno Ace', cursive;
+  background: #ffffff;
+}
+.container-but{
+  display: flex;
+  align-items:center;
+  
+}
+
+.but{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  margin-left:45px;
+  cursor: pointer;
+}
+
+.but-2{
+  height: 150px;
+  width: 250px;
+  border:2px solid rgb(0, 0, 0);
+  border-radius:10px;
+  /*background:linear-gradient(-45deg, transparent 15px, #58a 0);*/
+}
+.but-2-rectangle{
+  position: absolute;
+  background: #ff0000;
+  width: 80px;
+  height: 50px;
+  border-radius:13px;
+  transition: transform 1s;
+  z-index: 3;
+}
+.but-2-triangle{
+  position: absolute;
+  width: 0;
+  height: 0;
+  /*border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid rgb(255, 255, 255);*/
+  border-top: 12.5px solid transparent;
+	border-left: 25px solid rgb(255, 255, 255);
+	border-bottom: 12.5px solid transparent;
+  
+  /*transform: rotate(0.25turn);*/
+  transition: transform 1s;
+  z-index: 3;
+}
+.but-2-text{
+  transition: transform 1s;
+  z-index: 0;
+  font-weight: 900;
+}
+.but-2-box{
+  position: absolute;
+  z-index: 2;
+  background: #ffffff;
+  width: 100px;
+  height: 100px;
+  transition: transform 1s,scale 1s;
+  
+}
+
+
+
+
+.but-2:hover > .but-2-rectangle {
+  transform: translate(-45px);
+}
+.but-2:hover > .but-2-triangle {
+  transform: translate(-45px);
+  
+}
+.but-2:hover > .but-2-text {
+  transform: translate(45px);
+}
+.but-2:hover > .but-2-box {
+  transform: translate(-54px);
+  scale: 0.8;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.but-1{
+  border:2px solid rgb(0, 0, 0);
+  border-radius:8px;
+  width: 150px;
+  height: 250px;
+  transition: background-color 1s;
+}
+.but-1-text{
+  position: absolute;
+  top: 80px;
+  font-size: 20px;
+  font-weight: 800;
+  transition: color 2s;
+  transition: transform 2s;
+}
+.but-1-rectangle{
+  position: absolute;
+  background: #ff0000;
+  width: 80px;
+  height: 50px;
+  border-radius:13px;
+  transition: background-color 1s;
+}
+.but-1-triangle{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid rgb(255, 255, 255);
+  transform: rotate(0.25turn);
+  transition: background-color 1s;
+
+}
+
+.but-1-frame{
+  width: 84px;
+  height: 54px;
+  border:1px solid rgb(255, 255, 255);
+  border-radius:13px;
+  transition: transform 1s;
+}
+
+.but-1:hover{
+  background: #ff0000;
+}
+.but-1:hover >.but-1-rectangle{
+  background: #ffffff;
+
+}
+.but-1:hover > .but-1-triangle{
+  border-bottom: 25px solid rgb(255, 0, 0);
+}
+.but-1:hover >.but-1-frame{
+  border:1px solid rgb(255, 255, 255);
+  transform: scale(1.5);
+  /*animation: anim 3s infinite linear;*/
+}
+.but-1:hover > .but-1-text{
+  color: #ffffff;
+  transform: translate(0px, -71%) 
+}
+
+
+
+
+/*
+.uiverse {
+  position: relative;
+  background: #ffffff;
+  color: #000;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+  background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+  color: #ffffff;
+}
+*/
